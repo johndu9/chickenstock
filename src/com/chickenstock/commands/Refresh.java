@@ -5,7 +5,7 @@ public class Refresh extends Command {
 	
 	private List<String> messages;
 	
-	public Refresh(String[][] input, List<String> messages) {
+	public Refresh(String[][] input, List<String> messages) {	
 		super(input);
 		this.messages = messages;
 	}

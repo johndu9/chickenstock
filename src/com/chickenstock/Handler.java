@@ -6,9 +6,7 @@ import java.io.OutputStream;
 import java.util.LinkedList;
 import java.util.List;
 
-import com.chickenstock.commands.Command;
-import com.chickenstock.commands.Refresh;
-import com.chickenstock.commands.Send;
+import com.chickenstock.commands.*;
 import com.sun.net.httpserver.Headers;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
