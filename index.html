@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>c h i c k e n s t o c k</title>
+		<link rel="stylesheet" type="text/css" href="master.css">
+		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div class="container">
+			<div id="header">c h i c k e n s t o c k</div>
+			<div id="content">
+				<input id="text" placeholder="Message"/>
+				<button onclick="send()">Send Message</button>
+			</div>
+			<br>
+			<div id="content">
+				<button onclick="refresh()">Refresh Messages</button>
+				<ul onload="refresh()" id="list">
+				</ul>
+			</div>
+		</div>
+    	<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    	<!--script src="/jquery-1.11.1.js"></script-->
+		<script src="index.js"></script>
+	</body>
+</html>
