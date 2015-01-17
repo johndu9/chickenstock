@@ -48,10 +48,18 @@ public class NewsParser {
 				companySymbols.add(query);
 				String description = getDescription(content);
 				int score = 0;
+
+				/*
+				for (String word : words) {
+					if (description.contains(word)) {
+						score += wordScores.get(words.indexOf(word));
+					}
+				}
+				*/
 				String[] parts = description.split(" ");
 				for (String part : parts) {
 					for (String word : words) {
-						if (part.equals(word)) {
+						if (part.contains(word)) {
 							score += wordScores.get(words.indexOf(word));
 						}
 					}
