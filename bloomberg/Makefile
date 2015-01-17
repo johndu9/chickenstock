@@ -1,2 +1,2 @@
 all:
-    ./curlTest.sh > master.txt
+    ./master.sh > master.txt
