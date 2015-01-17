@@ -1,4 +1,4 @@
-curl -X POST https://54.174.49.59/request/blp/refdata/HistoricalData --cacert ./bloomberg.crt --cert ./mhacks_spring_2015_058.crt --key ./mhacks_spring_2015_058.key --data @- <<EOF
+curl -X POST https://54.174.49.59/request/blp/refdata/ReferenceData --cacert ./bloomberg.crt --cert ./mhacks_spring_2015_058.crt --key ./mhacks_spring_2015_058.key --data @- <<EOF
 { "securities": ["AAPL US Equity",
 "XOM US Equity",
 "MSFT US Equity",
@@ -99,8 +99,6 @@ curl -X POST https://54.174.49.59/request/blp/refdata/HistoricalData --cacert ./
 "NEE US Equity",
 "SO US Equity",
 "GD US Equity"],
-  "fields": ["PX_LAST", "OPEN"],
-  "startDate": "20141201",
-  "endDate": "20150117",
-  "periodicitySelection": "DAILY" }
+  "fields": ["NAME"]
+ }
 EOF
