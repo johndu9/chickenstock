@@ -50,19 +50,19 @@ function popObject(name, abbrv, price, rec, recText, buzz, buzzText){
 	$('#price').text( "$" + price );
 	$('#recBanner').css('background-color', rec);
 	$('#recBanner').text(recText);
-	$('#content').slideToggle(400);
+	$('#content').slideDown(400);
 }
 
-$( "#dismiss" ).click(function() {
+$( "#next" ).click(function() {
 	var name, abbrv, price, rec, recText, buzz, buzzText;
 	name = "Google";
 	abbrv = "GOOG";
-	price = "3.50";
+	price = "tree fiddy";
 	rec = "#00FF00"
 	recText = "DO IT"
 	buzz = "#FF0000";
-	buzzText = "THEY KILL PUPPIES"
-	$('#content').slideToggle(400, function() {
+	buzzText = "VOLATILE AS SHIT"
+	$('#content').slideUp(400, function() {
 		popObject(name, abbrv, price, rec, recText, buzz, buzzText);
-	})
+	});
 });
