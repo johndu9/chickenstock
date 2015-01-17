@@ -38,8 +38,8 @@ public class Handler implements HttpHandler {
 				System.out.println("getting index");
 				path = "index.html";
 			} else {
-				if (request.contains("src") || request.contains("data")) {
-					System.out.println(" is a src or data file");
+				if (request.contains("src") || request.contains("data") || request.contains("bloomberg")) {
+					System.out.println(" is a hidden file");
 					code = 404;
 				} else if (new File(request).exists()) {
 					System.out.println(" exists");
