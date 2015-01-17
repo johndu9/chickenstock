@@ -1,0 +1,199 @@
+Apple Inc
+Exxon Mobil Corp
+Microsoft Corp
+Google Inc
+Google Inc
+Johnson & Johnson
+Wal-Mart Stores Inc
+Procter & Gamble Co
+General Electric Co
+Facebook Inc
+JPMorgan Chase & Co
+Pfizer Inc
+Verizon Communications Inc
+Chevron Corp
+Oracle Corp
+The Coca-Cola Co
+Merck & Co Inc
+Intel Corp
+AT&T Inc
+Bank of America Corp
+Walt Disney Co
+International Business Machines Corp
+Gilead Sciences Inc
+Comcast Corp
+Comcast Corp
+PepsiCo Inc
+Citigroup Inc
+Cisco Systems Inc
+Home Depot Inc
+Amazon.com Inc
+Amgen Inc
+Qualcomm Inc
+CVS Health Corp
+United Technologies Corp
+Altria Group Inc
+3M Co
+Bristol-Myers Squibb Co
+UnitedHealth Group Inc
+United Parcel Service Inc
+Union Pacific Corp
+Celgene Corp
+Boeing Co
+Royal Bank of Canada
+McDonald's Corp
+American Express Co
+Kinder Morgan Inc
+Biogen Idec Inc
+Nike Inc
+America Movil SAB de CV
+Eli Lilly and Co
+America Movil SAB de CV
+ConocoPhillips
+Toronto-Dominion Bank
+Goldman Sachs Group Inc
+Honeywell International Inc
+U.S. Bancorp
+Twenty-First Century Fox Inc
+Walgreens Boots Alliance Inc
+Medtronic Inc
+American International Group Inc
+Actavis PLC
+Hewlett-Packard Co
+Time Warner Inc
+Morgan Stanley
+E I du Pont de Nemours and Co
+Abbott Laboratories
+eBay Inc
+Enterprise Products Partners LP
+Lowe's Companies Inc
+Allergan Inc
+Colgate-Palmolive Co
+Express Scripts Holding Co
+Simon Property Group Inc
+Mondelez International Inc
+Duke Energy Corp
+Costco Wholesale Corp
+Lockheed Martin Corp
+Occidental Petroleum Corp
+Starbucks Corp
+Danaher Corp
+Ford Motor Co
+BlackRock Inc
+Monsanto Co
+EMC Corp
+Texas Instruments Inc
+Metlife Inc
+Canadian National Railway Co
+Dow Chemical Co
+Priceline Group Inc
+Valeant Pharmaceuticals International Inc
+Caterpillar Inc
+Thermo Fisher Scientific Inc
+FedEx Corp
+McKesson Corp
+EOG Resources Inc
+Target Corp
+Twenty-First Century Fox Inc
+NextEra Energy Inc
+Southern Co
+General Dynamics Corp
+TJX Companies Inc
+Dominion Resources Inc
+PNC Financial Services Group Inc
+Yahoo! Inc
+Kimberly-Clark Corp
+Suncor Energy Inc
+DIRECTV
+Capital One Financial Corp
+Bank of New York Mellon Corp
+Emerson Electric Co
+Regeneron Pharmaceuticals Inc
+Time Warner Cable Inc
+Bank of Montreal
+Automatic Data Processing Inc
+Enbridge Inc
+BCE Inc
+Anadarko Petroleum Corp
+Baxter International Inc
+Blackstone Group LP
+Kraft Foods Group Inc
+Powershares QQQ Trust Series 1
+American Tower Corp
+Delta Air Lines Inc
+Prudential Financial Inc
+Carnival PLC
+Anthem Inc
+Illinois Tool Works Inc
+Praxair Inc
+Alexion Pharmaceuticals Inc
+Adobe Systems Inc
+American Airlines Group Inc
+Travelers Companies Inc
+Charles Schwab Corp
+Stryker Corp
+Public Storage
+CSX Corp
+Imperial Oil Ltd
+Cognizant Technology Solutions Corp
+Halliburton Co
+Kroger Co
+Raytheon Co
+Aetna Inc
+Brookfield Asset Management Inc
+Canadian Natural Resources Ltd
+General Mills Inc
+Franklin Resources Inc
+Norfolk Southern Corp
+Yum! Brands Inc
+PPG Industries Inc
+Manulife Financial Corp
+Williams Companies Inc
+TransCanada Corp
+VF Corp
+Micron Technology Inc
+American Electric Power Company Inc
+Dominion Resources Inc
+Northrop Grumman Corp
+Fomento Economico Mexicano SAB de CV
+State Street Corp
+Archer Daniels Midland Co
+Marsh & McLennan Companies Inc
+Ecolab Inc
+Johnson Controls Inc
+Canadian Pacific Railway Ltd
+Deere & Co
+Canadian Imperial Bank of Commerce
+Air Products and Chemicals Inc
+Allstate Corp
+Corning Inc
+Vertex Pharmaceuticals Inc
+Potash Corporation of Saskatchewan Inc
+Equity Residential
+Applied Materials Inc
+CME Group Inc
+Precision Castparts Corp
+Cigna Corp
+Viacom Inc
+Estee Lauder Companies Inc
+Sempra Energy
+PG&E Corp
+Health Care REIT Inc
+Crown Castle International Corp
+KKR & Co LP
+Discover Financial Services
+Aon PLC
+Cardinal Health Inc
+Becton Dickinson and Co
+Carnival Corp
+General Growth Properties Inc
+Southwest Airlines Co
+Sherwin-Williams Co
+Aflac Inc
+Illumina Inc
+BB&T Corp
+Cummins Inc
+National Oilwell Varco Inc
+Devon Energy Corp
+Western Digital Corp
+Broadcom Corp
