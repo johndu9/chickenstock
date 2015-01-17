@@ -42,6 +42,22 @@ function loadDoc() {
 		});
 };
 
+function populate() {
+	$.ajax({
+		type: "POST",
+		data: {
+			command: "test"
+		},
+		url: "receive",
+		success: function(response) {
+			console.log(response);
+			var json = $.parseJSON(response);
+			popObject(json.name, json.abbrv, json.price, json.rec,
+				json.recText, json.buzz, json.buzzText);
+		}
+	})
+}
+
 function popObject(name, abbrv, price, rec, recText, buzz, buzzText){
 	$('#buzzBanner').css('background-color',buzz);
 	$('#buzzBanner').text(buzzText);
@@ -53,16 +69,22 @@ function popObject(name, abbrv, price, rec, recText, buzz, buzzText){
 	$('#content').slideDown(400);
 }
 
+$(document).ready(function() {
+	populate();
+})
+
 $( "#next" ).click(function() {
-	var name, abbrv, price, rec, recText, buzz, buzzText;
-	name = "Google";
-	abbrv = "GOOG";
-	price = "tree fiddy";
-	rec = "#00FF00"
-	recText = "DO IT"
-	buzz = "#FF0000";
-	buzzText = "VOLATILE AS SHIT"
-	$('#content').slideUp(400, function() {
-		popObject(name, abbrv, price, rec, recText, buzz, buzzText);
-	});
+	populate();
+	// var name, abbrv, price, rec, recText, buzz, buzzText;
+
+	// name = "Google";
+	// abbrv = "GOOG";
+	// price = "tree fiddy";
+	// rec = "#00FF00"
+	// recText = "DO IT"
+	// buzz = "#FF0000";
+	// buzzText = "VOLATILE AS SHIT"
+	// $('#content').slideUp(400, function() {
+	// 	popObject(name, abbrv, price, rec, recText, buzz, buzzText);
+	// });
 });

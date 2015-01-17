@@ -32,11 +32,21 @@ body {
 
 #header {
 	color: white;
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Codystar', sans-serif;
 	font-size: 10vmin;
 	margin-bottom: 30pt;
 	text-align: center;
+	color: yellow;
+
+	-webkit-animation: cpulse 3s;
+	animation: cpulse 3s;
+	-webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
 }
+
+
 
 #sContainer {
 	height: 20pt;
@@ -176,8 +186,20 @@ a:hover {
     100% {opacity: 1;}
 }
 
-keyframes pulse {
+@keyframes pulse {
     0% {opacity: 1;}
     50% {opacity: .3;}
     100% {opacity: 1;}
+}
+
+@-webkit-keyframes cpulse {
+    0% {text-shadow: 0px 0px 19px 10px yellow;}
+    50% {text-shadow: 0px 0px 19px 10px black;}
+    100% {text-shadow: 0px 0px 19px 10px yellow;}
+}
+
+@keyframes cpulse {
+    0% {text-shadow: 0px 0px 19px 10px yellow;}
+    50% {text-shadow: 0px 0px 19px 10px black;}
+    100% {text-shadow: 0px 0px 19px 10px yellow;}
 }

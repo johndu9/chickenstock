@@ -1,10 +1,13 @@
 package com.chickenstock;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.LinkedList;
 import java.util.List;
+
+import org.json.JSONException;
 
 import com.chickenstock.commands.*;
 import com.sun.net.httpserver.Headers;
@@ -36,10 +39,10 @@ public class Handler implements HttpHandler {
 			int code = 200;
 			if (request.equals("")) {
 				System.out.println("getting index");
-				path = "index.html";
+				path = "findex.html";
 			} else {
-				if (request.contains("src") || request.contains("data") || request.contains("bloomberg")) {
-					System.out.println(" is a hidden file");
+				if (request.contains("src") || request.contains("data")) {
+					System.out.println(" is a src or data file");
 					code = 404;
 				} else if (new File(request).exists()) {
 					System.out.println(" exists");
@@ -80,18 +83,17 @@ public class Handler implements HttpHandler {
 	 * @return Output for the browser to handle
 	 */
 	private String handleCommand(String[][] input) {
-		String command = input[Command.COMMAND][Command.VAL];
+		//String command = input[Command.COMMAND][Command.VAL];
 		String output = "";
-		switch (command) {
-			case "send":
-				output = new Send(input, messages).handle();
-				break;
-			case "refresh":
-				output = new Refresh(input, messages).handle();
-				break;
-			default:
-				output = "nothing";
-				break;
+		try {
+			try {
+				output = new Receive().handle((int)(Math.random()*200));
+			} catch (FileNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		} catch (JSONException e) {
+			e.printStackTrace();
 		}
 		return output;
 	}
