@@ -123,7 +123,7 @@ public class NewsParser {
 		writeToFile(builder.toString(), path);
 	}
 	
-	private static void writeToFile(String content, String path) throws IOException {
+	public static void writeToFile(String content, String path) throws IOException {
 		System.out.println("Writing content to " + path + " . . .");
 		Scanner reader = new Scanner(content);
 		BufferedWriter writer = new BufferedWriter(new FileWriter(path));

@@ -6,12 +6,12 @@ import java.nio.file.Files;
 import java.util.LinkedList;
 
 public class BloombergParser {
-	
+
 	public static double average(double valueOne, double valueTwo){
 		return (valueOne + valueTwo) / 2;
 	}
 	public static void main(String[] args) {
-		
+
 		String f = "";
 		double closingPrice = 0;
 		double openingPrice = 0;
@@ -51,6 +51,27 @@ public class BloombergParser {
 				currentCompany.addDailyAverage(average(closingPrice, openingPrice));
 			}
 
+		}
+		String diffFile = "";
+		for(Company c: companies){
+			int days = 0;
+			double previousDay = 0;
+			double diff = 0;
+			for(double currentDay: c.dailyAverage){
+				days++;
+				if(currentDay != c.dailyAverage.get(0))
+					diff += Math.abs(currentDay - previousDay);
+				previousDay = currentDay;
+			}
+			//System.out.println("Average change for " + c.title + " is " + diff / days);
+			c.addVolatileIndex(diff / days);
+			diffFile += "" + (diff / days) + "\n";
+		}
+		System.out.print(diffFile);
+		try {
+			NewsParser.writeToFile(diffFile, "bloomberg\\diff.txt");
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
 	}
 
