@@ -67,6 +67,7 @@ function popObject(name, abbrv, price, rec, recText, buzz, buzzText){
 	$('#recBanner').css('background-color', rec);
 	$('#recBanner').text(recText);
 	$('#content').slideDown(400);
+	$('#tradelink').attr("href", "http://finance.yahoo.com/q?s=" + abbrv);
 }
 
 $(document).ready(function() {
@@ -77,16 +78,4 @@ $( "#next" ).click(function() {
 	$('#content').slideToggle(400,function(){
 		populate()
 	});
-	// var name, abbrv, price, rec, recText, buzz, buzzText;
-
-	// name = "Google";
-	// abbrv = "GOOG";
-	// price = "tree fiddy";
-	// rec = "#00FF00"
-	// recText = "DO IT"
-	// buzz = "#FF0000";
-	// buzzText = "VOLATILE AS SHIT"
-	// $('#content').slideUp(400, function() {
-	// 	popObject(name, abbrv, price, rec, recText, buzz, buzzText);
-	// });
 });

@@ -31,6 +31,7 @@ body {
 	background-color: rgba(255,255,255,.1);
 }
 
+
 #header {
 	color: white;
 	font-family: 'Codystar', sans-serif;
@@ -180,6 +181,10 @@ a:link {
 }
 a:hover {
 	color: #fff;
+}
+
+a:visited {
+	color: inherit;
 }
 
 @keyframes cpulse {
