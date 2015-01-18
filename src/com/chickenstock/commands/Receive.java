@@ -45,7 +45,7 @@ public class Receive {
 		}
 		else if(score > 4){
 			recSentence = "Great deal!";
-			recColor = "#00FF00";
+			recColor = "#42ff23";
 		}
 		scan = new Scanner(new File("bloomberg/data.txt"));
 		for(int i = 0; i < line; i++){
