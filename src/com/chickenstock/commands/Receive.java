@@ -6,7 +6,6 @@ import java.util.Scanner;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.json.JSONWriter;
 
 public class Receive {
 
@@ -90,6 +89,7 @@ public class Receive {
 		writer.put("buzz", buzzColor);
 		writer.put("buzzText", buzzText);
 		System.out.println(writer.toString());
+		scan.close();
 		return writer.toString();
 		
 		
