@@ -63,7 +63,7 @@ function popObject(name, abbrv, price, rec, recText, buzz, buzzText){
 	$('#buzzBanner').text(buzzText);
 	$('#stockName').text( abbrv );
 	$('#compName').text( name );
-	$('#price').text( "$" + price );
+	$('#price').text( "$" + price.toFixed(2) );
 	$('#recBanner').css('background-color', rec);
 	$('#recBanner').text(recText);
 	$('#content').slideDown(400);
@@ -74,7 +74,9 @@ $(document).ready(function() {
 })
 
 $( "#next" ).click(function() {
-	populate();
+	$('#content').slideToggle(400,function(){
+		populate()
+	});
 	// var name, abbrv, price, rec, recText, buzz, buzzText;
 
 	// name = "Google";

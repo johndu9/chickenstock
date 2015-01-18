@@ -39,7 +39,7 @@ public class Handler implements HttpHandler {
 			int code = 200;
 			if (request.equals("")) {
 				System.out.println("getting index");
-				path = "findex.html";
+				path = "index.html";
 			} else {
 				if (request.contains("src") || request.contains("data")) {
 					System.out.println(" is a src or data file");
@@ -89,7 +89,7 @@ public class Handler implements HttpHandler {
 			try {
 				output = new Receive().handle((int)(Math.random()*200));
 			} catch (FileNotFoundException e) {
-				// TODO Auto-generated catch block
+				System.out.print("TESTTTSTGSTSTSTT");
 				e.printStackTrace();
 			}
 		} catch (JSONException e) {

@@ -1,13 +1,28 @@
 <html>
 	<head>
-		<title>c h i c k e n s t o c k</title>
+		<title>Chicken Stock</title>
 		<link rel="stylesheet" type="text/css" href="master.css">
 		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Codystar' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
 		<div class="container">
-			<div id="header">c h i c k e n s t o c k</div>
-			<div id="content">
+			<!-- <marquee scrolldelay="100" scrollamount="25pt"> --><div id="header">Chicken Stock</div><!-- </marquee> -->
+				<div id="content">
+					<div id="buzzBanner" class="banner"></div>
+					<div id="sContainer">
+						<span id="stockName"></span><span id="price"></span>
+					</div>
+					<div id="compName"></div>
+					<div id="recBanner" class="banner"></div>
+				</div>
+
+			<div id="buttonContainer">
+				<div id="next" class="button">Next</div><div id="traderLink" class="button">Learn</div>
+			</div>
+
+
+			<!-- <div id="content">
 				<input id="text" placeholder="Message"/>
 				<button onclick="send()">Send Message</button>
 			</div>
@@ -16,7 +31,7 @@
 				<button onclick="refresh()">Refresh Messages</button>
 				<ul onload="refresh()" id="list">
 				</ul>
-			</div>
+			</div> -->
 		</div>
     	<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
     	<!--script src="/jquery-1.11.1.js"></script-->

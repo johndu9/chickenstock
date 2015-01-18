@@ -15,13 +15,12 @@ public class Receive {
 		Scanner scan = new Scanner(new File("data/companyNames.txt"));
 		for(int i = 0; i < line; i++)
 			scan.nextLine();
-		writer.put("name",scan.next());
+		writer.put("name",scan.nextLine());
 		
 		scan = new Scanner(new File("data/companySymbols.txt"));
 		for(int i = 0; i < line; i++)
 			scan.nextLine();
 		writer.put("abbrv",scan.next());
-		
 		
 		scan = new Scanner(new File("data/companyScores.txt"));
 		for(int i = 0; i < line; i++)
@@ -49,12 +48,48 @@ public class Receive {
 			recSentence = "Great deal!";
 			recColor = "#00FF00";
 		}
-		writer.put("price", 0.00);
+		scan = new Scanner(new File("bloomberg/data.txt"));
+		for(int i = 0; i < line; i++){
+			scan.nextLine();
+		}
+
+		String temp = scan.nextLine();
+		String[] sArray = temp.split(" ");
+		System.out.println(temp);
+
+		double volatility = Double.parseDouble(sArray[1]);
+
+		double price = Double.parseDouble(sArray[2]);
+
+		writer.put("price", price);
 		writer.put("rec", recColor);
 		writer.put("recText", recSentence);
 		
-		writer.put("buzz", "#0000FF");
-		writer.put("buzzText", "Stuff");
+
+		
+		String buzzText = "Unable to get data";
+		String buzzColor = "#000000";
+
+		if(volatility < .5){
+			buzzText = "Very stable";
+			buzzColor = "#0000FF";
+		} else if(volatility < 1.0){
+			buzzText = "Relatively level";
+			buzzColor = "#B273FF";
+		} else if(volatility == 1.5){
+			buzzText = "Meh";
+			buzzColor = "#FF87EF";
+		} else if(volatility < 2){
+			buzzText = "A bit active";
+			buzzColor = "#FF655E";
+		} else {
+			buzzText = "Crraaaaaazzzzzyyyyy!";
+			buzzColor = "#FF9812";
+		}
+		
+		writer.put("buzz", buzzColor);
+		writer.put("buzzText", buzzText);
+		System.out.println(writer.toString());
 		return writer.toString();
 		
 		
