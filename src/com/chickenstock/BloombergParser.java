@@ -17,7 +17,7 @@ public class BloombergParser {
 		double closingPrice = 0;
 		double openingPrice = 0;
 		Company currentCompany = null;
-		Company[] companies = new Company[200];//ArrayList<String> companyNames = new ArrayList<String>(200);
+		Company[] companies = new Company[200];
 		boolean readFirstLine = false;
 		File stocks = new File("bloomberg\\master.txt");
 		File names = new File("data\\companySymbols.txt");

@@ -1,3 +1,6 @@
 /bin/
 .classpath
 .project
+.\bloomberg\bloomberg.crt
+.\bloomberg\mhacks_spring_2015_058.crt
+.\bloomberg\mhacks_spring_2015_058.key
